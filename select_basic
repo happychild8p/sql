@@ -1,0 +1,24 @@
+##HACKERRANK SQL basic select queries 
+#1
+#Select every data from all rows in CITY table
+select * from CITY;
+#2
+#Select all Americans cities with population larger than 100000
+select * from CITY where POPULATION > 100000 AND COUNTRYCODE = 'USA';
+#3
+#Query the names of all American cities in CITY with populations larger than 120000. The CountryCode for America is USA. 
+select NAME from CITY where POPULATION > 120000 and COUNTRYCODE = 'USA';
+#4
+#Query all columns for a city in CITY with the ID 1661
+select * from CITY where ID = 1661;
+#5
+#Query all attribute of every Japanese city in the CITY table.
+select * from CITY where COUNTRYCODE = 'JPN';
+#6
+#Query the names of all the japanese cities in the CITY table.
+select name from CITY where COUNTRYCODE = 'JPN';
+#7
+#Query a list of CITY names from STATION with even ID numbers only. You may print the results in any order, but must exclude duplicates from your answer.
+select distinct CITY from STATION where mod(ID, 2) = 0;
+#8Query a list of CITY names from STATION with even ID numbers only. You may print the results in any order, but must exclude duplicates from your answer.
+select name from employee order by name;
